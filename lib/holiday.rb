@@ -47,4 +47,5 @@ def all_holidays_with_bbq(holiday_hash)
     supplies.find_all {|supply| supply.include?("BBQ")}
  holiday_hash
  end
+ end
 end
