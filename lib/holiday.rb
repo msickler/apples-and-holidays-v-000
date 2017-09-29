@@ -32,9 +32,8 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
 holiday_hash.each do |season, data|
-  season.each do |holiday, info|
+  season.split.capitalize!.join
   end
-end
 
 end
 
