@@ -5,12 +5,13 @@ holiday_hash[:summer][:fourth_of_july][1]
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
-holiday_hash.each do |season, data|
-  season.each do |data, value|
-    value << suply
+holiday_hash.each do |season, holidays|
+  if season == :winter
+  holidays.each do |attribute, value|
+    value << supply
   end
 end
-holiday_hash
+end
 end
 
 
